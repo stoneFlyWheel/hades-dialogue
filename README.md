@@ -18,6 +18,7 @@
 <h4>notes:</h4>
 <ol>
   <li>this project is unfinished! please don't take it as a representation of the quality of all my work.</li>
+  <li>this project was made after i began moving my stuff to github, but i forgot to upload it in its iterations. i don't have access to previous versions, so it exists in its current form only. sorry!</li>
 </ol>
 
 <h4>link:</h4>
