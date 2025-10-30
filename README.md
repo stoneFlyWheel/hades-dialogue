@@ -1,4 +1,4 @@
-<h2>dialogue boxes based on the ones from hades (1)!!</h2>
+<h2>dialogue boxes based on hades (1)!!</h2>
 
 <h4>my goals for this project:</h4>
 <ol>
