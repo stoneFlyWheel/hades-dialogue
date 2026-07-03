@@ -1852,3 +1852,106 @@ img.sprite_img_demo {
   width: 30px;
   background: radial-gradient(ellipse 28px 2.5px at top center, #2D7553 30%, transparent 80%);
 }
+
+/* below is the triangle "next" button */
+
+details > summary {
+  list-style-type: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details > summary::before {
+  content: '';
+}
+
+details[open] > summary::before {
+  content: '';
+}
+
+.trigle {
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  transition: opacity 0.1s 0.03s linear, transform 0.17s linear, top 0.07s, visibility 0s 0.13s;
+}
+
+.trigle > .trigle_button {
+  position: relative;
+  height: 30px;
+  width: 45px;
+  border-top-right-radius: 7px 3px;
+  border-top-left-radius: 7px 3px;
+  background-repeat: no-repeat;
+  background-image: 
+    linear-gradient(227deg, black 53%, transparent 53%),
+    linear-gradient(133deg, black 53%, transparent 53%),
+    linear-gradient(227deg, grey 46%, transparent 58%),
+    linear-gradient(133deg, grey 46%, transparent 58%);
+  background-size:
+    50% 100%,
+    50% 100%,
+    45% 100%,
+    45% 100%;
+  background-position:
+    0 0,
+    100% 0,
+    7.8% 3px,
+    91.3% 3px;
+}
+
+.trigle:hover {
+  top: 7px;
+}
+
+.trigle > .trigle_button::before {
+  content: "";
+  position: absolute;
+  left: 2.5px;
+  top: 0.5px;
+  height: 25px;
+  width: 40px;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-image: 
+    radial-gradient(ellipse 45% 35% at center, #b2ab6d 30%, transparent 70%),
+    radial-gradient(ellipse 45% 35% at center, #b2ab6d 15%, transparent 70%),
+    linear-gradient(227deg, #434236 50%, transparent 50%),
+    linear-gradient(133deg, #434236 50%, transparent 50%),
+    linear-gradient(227deg, #808080 45%, transparent 60%),
+    linear-gradient(133deg, #808080 45%, transparent 60%);
+  background-size:
+    130% 23%,
+    30% 23%,
+    50% 100%,
+    50% 100%,
+    45% 100%,
+    45% 100%;
+  background-position:
+    -1.4px -0.5px,
+    2px -0.5px,
+    0 0,
+    100% 0,
+    8% 1.3px,
+    91% 1.3px;
+}
+
+.trigle > .trigle_button::after {
+  content: "";
+  background: linear-gradient(-45deg, #252423 10%, transparent 40%);
+  transform: rotate(45deg);
+  position: absolute;
+  left: 0px;
+  bottom: 11px;
+  height: 25px;
+  width: 35px;
+}
+
+.trigle[open] {
+  opacity: 0;
+  transform: translateY(3px);
+  visibility: hidden;
+  transition: opacity 0.1s 0.03s linear, transform 0.07s linear, visibility 0s 0.13s;
+}
